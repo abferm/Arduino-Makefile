@@ -978,7 +978,7 @@ DEPS                = $(LOCAL_OBJS:.o=.d) $(LIB_OBJS:.o=.d) $(PLATFORM_OBJS:.o=.
 # You can get the list of options at http://www.nongnu.org/avr-libc/user-manual/using_tools.html#gcc_optO
 # Also read http://www.nongnu.org/avr-libc/user-manual/FAQ.html#faq_optflags
 ifndef OPTIMIZATION_LEVEL
-    OPTIMIZATION_LEVEL=s
+    OPTIMIZATION_LEVEL=0
     $(call show_config_variable,OPTIMIZATION_LEVEL,[DEFAULT])
 else
     $(call show_config_variable,OPTIMIZATION_LEVEL,[USER])
